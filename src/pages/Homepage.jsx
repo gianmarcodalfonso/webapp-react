@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 
+import MovieCard from "../components/MovieCard";
+
 const Homepage = () => {
 	const [movies, setMovies] = useState([]);
 
@@ -26,20 +28,7 @@ const Homepage = () => {
 						<h1>Film disponibili</h1>
 					</div>
 					{movies.map((movie) => {
-						return (
-							<div className="col-12 col-md-6 col-lg-4" key={movie.id}>
-								<div className="card">
-									<img src="..." className="card-img-top" alt={movie.title} />
-									<div className="card-body">
-										<h5 className="card-title">{movie.title}</h5>
-										<p className="card-text">{movie.director}</p>
-										<p className="card-text">{movie.genre}</p>
-										<p className="card-text">{movie.reales_year}</p>
-									</div>
-								</div>
-								;
-							</div>
-						);
+						return <MovieCard movie={movie} />;
 					})}
 				</div>
 			</div>
