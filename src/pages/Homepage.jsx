@@ -1,7 +1,29 @@
 import React from "react";
 
 const Homepage = () => {
-	return <div></div>;
+	return (
+		<div>
+			<div className="container">
+				<div className="row">
+					<div className="col-12">
+						<h1>Film disponibili</h1>
+					</div>
+					<div className="col-12">
+						<div className="card">
+							<img src="..." className="card-img-top" alt="..." />
+							<div className="card-body">
+								<h5 className="card-title">Card title</h5>
+								<p className="card-text">Some quick example text.</p>
+								<a href="#" className="btn btn-primary">
+									Go somewhere
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Homepage;
