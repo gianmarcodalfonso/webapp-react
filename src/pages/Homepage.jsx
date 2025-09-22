@@ -6,14 +6,16 @@ const Homepage = () => {
 
 	const fetchMovies = () => {
 		axios
-			.get("http://localhost:3000/api/movies/", (resp) => {
+			.get("http://localhost:3000/api/movies/")
+			.then((resp) => {
 				setMovies(resp.data);
+				console.log(resp);
 			})
 			.catch((err) => console.log(err));
 	};
 
 	useEffect(() => {
-		fetchMovies;
+		fetchMovies();
 	}, []);
 
 	return (
@@ -24,6 +26,7 @@ const Homepage = () => {
 						<h1>Film disponibili</h1>
 					</div>
 					<div className="col-12">
+						{}
 						<div className="card">
 							<img src="..." className="card-img-top" alt="..." />
 							<div className="card-body">
