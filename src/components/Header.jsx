@@ -15,7 +15,7 @@ const Header = () => {
 						<h1>Flixteca</h1>
 					</div>
 					<div>
-						<Link className="btn btn-primary" to="/">
+						<Link className="btn btn-danger text-black fw-bolder" to="/">
 							Home
 						</Link>
 					</div>
