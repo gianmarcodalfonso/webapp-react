@@ -25,7 +25,7 @@ const Homepage = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
-						<h1>Film disponibili</h1>
+						<h1 className="mt-5">Film disponibili</h1>
 					</div>
 					{movies.map((movie) => {
 						return <MovieCard movie={movie} />;
